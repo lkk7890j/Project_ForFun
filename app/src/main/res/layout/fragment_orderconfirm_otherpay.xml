@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".orderconfirm.Orderconfirm_otherpay">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_ocrOtherPay_Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="360dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="備註："
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="@+id/textView16"
+                    app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="32dp"
+                    android:text="總金額："
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <EditText
+                    android:id="@+id/tv_ocrOtherPay_notes"
+                    android:layout_width="257dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="73dp"
+                    android:ems="10"
+                    android:inputType="textMultiLine"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_ocrOtherPay_account"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/textView12"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/tv_ocrOtherPay_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/textView16"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/img_ocrOtherPay_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:src="@drawable/uploadpicture"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_ocrOtherPay_notes" />
+
+                <ImageButton
+                    android:id="@+id/bt_ocrOtherPay_cansel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="32dp"
+                    android:background="@drawable/bt_14050blank"
+                    android:src="?android:attr/selectableItemBackground"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img_ocrOtherPay_pic" />
+
+                <ImageButton
+                    android:id="@+id/bt_ocrOtherPay_confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="32dp"
+                    android:background="@drawable/bt_14050blank"
+                    android:src="?android:attr/selectableItemBackground"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img_ocrOtherPay_pic" />
+
+                <TextView
+                    android:id="@+id/tv_ocrOtherPay_canselText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="取消"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bt_ocrOtherPay_cansel"
+                    app:layout_constraintEnd_toEndOf="@+id/bt_ocrOtherPay_cansel"
+                    app:layout_constraintStart_toStartOf="@+id/bt_ocrOtherPay_cansel"
+                    app:layout_constraintTop_toTopOf="@+id/bt_ocrOtherPay_cansel" />
+
+                <TextView
+                    android:id="@+id/tv_ocrOtherPay_confirmText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="確認"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bt_ocrOtherPay_confirm"
+                    app:layout_constraintEnd_toEndOf="@+id/bt_ocrOtherPay_confirm"
+                    app:layout_constraintStart_toStartOf="@+id/bt_ocrOtherPay_confirm"
+                    app:layout_constraintTop_toTopOf="@+id/bt_ocrOtherPay_confirm" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

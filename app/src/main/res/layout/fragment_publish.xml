@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".publish.PublishFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <!--                <Button-->
+                <!--                    android:id="@+id/btnPublishDebug"-->
+                <!--                    android:layout_width="60dp"-->
+                <!--                    android:layout_height="30dp"-->
+                <!--                    android:layout_gravity="center"-->
+                <!--                    android:background="@drawable/bt_9044blank"-->
+                <!--                    android:foreground="?android:attr/selectableItemBackground"-->
+                <!--                    android:text="範例輸入"-->
+                <!--                    android:textColor="@color/black"-->
+                <!--                    android:textSize="8sp"-->
+                <!--                    app:backgroundTint="?android:attr/panelBackground"-->
+                <!--                    app:backgroundTintMode="add" />-->
+
+                <TextView
+                    android:id="@+id/btnPublishDebug"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:alpha="0.5"
+                    android:text="範例輸入" />
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="刊登標題(必填)"
+                app:boxBackgroundColor="@color/cardview_shadow_end_color"
+                app:hintTextColor="?android:attr/textColorHint">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editPublishTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="首頁圖片：" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgPublishTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal"
+                    app:srcCompat="@drawable/uploadpicture" />
+
+                <TextView
+                    android:id="@+id/txtPublishTitleImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:background="#390B0101"
+                    android:text="點擊此處更換圖片"
+                    android:textColor="#FFFFFF"
+                    android:visibility="visible" />
+
+            </FrameLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:hint="屋況說明"
+                app:boxBackgroundColor="@color/cardview_shadow_end_color"
+                app:hintTextColor="?android:attr/textColorHint">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editPublishInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:height="200dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="屋況圖片：" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgPublishInfo1"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal"
+                    app:srcCompat="@drawable/uploadpicture" />
+
+                <TextView
+                    android:id="@+id/txtPublishInfo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:background="#390B0101"
+                    android:text="點擊此處更換圖片"
+                    android:textColor="#FFFFFF"
+                    android:visibility="visible" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgPublishInfo2"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal"
+                    app:srcCompat="@drawable/uploadpicture" />
+
+                <TextView
+                    android:id="@+id/txtPublishInfo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:background="#390B0101"
+                    android:text="點擊此處更換圖片"
+                    android:textColor="#FFFFFF"
+                    android:visibility="visible" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgPublishInfo3"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal"
+                    app:srcCompat="@drawable/uploadpicture" />
+
+                <TextView
+                    android:id="@+id/txtPublishInfo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:background="#390B0101"
+                    android:text="點擊此處更換圖片"
+                    android:textColor="#FFFFFF"
+                    android:visibility="visible" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spPublishCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Spinner
+                    android:id="@+id/spPublishArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="地址(必填)"
+                app:boxBackgroundColor="@color/cardview_shadow_end_color"
+                app:hintTextColor="?android:attr/textColorHint">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editPublishAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="租金"
+                    app:boxBackgroundColor="@color/cardview_shadow_end_color"
+                    app:hintTextColor="?android:attr/textColorHint">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editPublishRent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:text="/ 月(必填)" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="押金"
+                    app:boxBackgroundColor="@color/cardview_shadow_end_color"
+                    app:hintTextColor="?android:attr/textColorHint">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editPublishDeposit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:text="個月" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="坪數"
+                    app:boxBackgroundColor="@color/cardview_shadow_end_color"
+                    app:hintTextColor="?android:attr/textColorHint">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editPublishSquare"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:text="坪(必填)" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="押金"
+                    android:visibility="invisible"
+                    app:boxBackgroundColor="@color/cardview_shadow_end_color"
+                    app:hintTextColor="?android:attr/textColorHint">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:text="個月"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="性別限制：" />
+
+            <RadioGroup
+                android:id="@+id/radioPublishGender"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:checkedButton="@id/radioPublishGender0"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioPublishGender0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="無限制" />
+
+                <RadioButton
+                    android:id="@+id/radioPublishGender1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="限男性" />
+
+                <RadioButton
+                    android:id="@+id/radioPublishGender2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="限女性" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="房屋類型：" />
+
+            <RadioGroup
+                android:id="@+id/radioPublishType"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:checkedButton="@id/radioPublishType0"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioPublishType0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="套房" />
+
+                <RadioButton
+                    android:id="@+id/radioPublishType1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="雅房" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="提供設備：" />
+
+                <CheckBox
+                    android:id="@+id/cbPublishFurnishedAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="全選" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbPublishFurnished0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="電視" />
+
+                <CheckBox
+                    android:id="@+id/cbPublishFurnished1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="冰箱" />
+
+                <CheckBox
+                    android:id="@+id/cbPublishFurnished2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="冷氣" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbPublishFurnished3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="網路" />
+
+                <CheckBox
+                    android:id="@+id/cbPublishFurnished4"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="洗衣機" />
+
+                <CheckBox
+                    android:id="@+id/cbPublishFurnished5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="床鋪" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbPublishFurnished6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="衣櫃" />
+
+                <CheckBox
+                    android:id="@+id/cbPublishFurnished7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="桌子" />
+
+                <CheckBox
+                    android:id="@+id/cbPublishFurnished8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="椅子" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnPublishSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/bt_14050blank"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="刊登"
+                android:textColor="@color/black"
+                app:backgroundTint="?android:attr/panelBackground"
+                app:backgroundTintMode="add" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="match_parent"
+                android:layout_height="32dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

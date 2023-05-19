@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".discussionboard.DiscussionBoardFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/dis_tabview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:tabTextColor="?attr/colorControlNormal">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/dis_tab_renthouse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="租屋交流" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/dis_tab_knownledage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="知識問答" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/dis_tab_seeking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="需求單" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/dis_viewPage2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp">
+
+    </androidx.viewpager2.widget.ViewPager2>
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/btCancel"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="24dp"
+        android:text="關閉"
+        android:textColor="@color/red"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:divider="@color/black"
+        android:orientation="vertical"
+        android:showDividers="middle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btPickpic"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="從相簿選取"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btTakepic"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="拍照"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="22dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

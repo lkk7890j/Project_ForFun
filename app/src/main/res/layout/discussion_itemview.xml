@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|top">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/post_background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/post_item_bt_memberhead"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/post_memberhead" />
+
+            <LinearLayout
+                android:layout_width="247dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/post_item_memberName_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:hint="name" />
+
+                <TextView
+                    android:id="@+id/post_item_time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:hint="time" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/post_item_bt_more"
+                android:layout_width="20dp"
+                android:layout_height="23dp"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackground"
+                app:srcCompat="@drawable/bt_more" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/post_item_title_text"
+            android:layout_width="312dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:hint="Title"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/post_item_context_text"
+            android:layout_width="312dp"
+            android:layout_height="84dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="left"
+            android:hint="context" />
+
+        <ImageView
+            android:id="@+id/post_item_house_img"
+            android:layout_width="match_parent"
+            android:layout_height="166dp"
+            tools:srcCompat="@drawable/post_houseimg_test" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

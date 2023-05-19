@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".membercenter.personnalsanpshot.TenantstatusFragment">
+
+    <TextView
+        android:id="@+id/tvTenantScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:text="房客評價平均分" />
+
+    <RatingBar
+        android:id="@+id/rbTenantScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:isIndicator="true"
+        android:progressTint="#FCFF8F"
+        android:max="5" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/tenStatusNote"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="尚未有任何評價"
+        android:visibility="gone" />
+</LinearLayout>

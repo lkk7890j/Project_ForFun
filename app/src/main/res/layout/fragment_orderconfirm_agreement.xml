@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView_Agreement"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".orderconfirm.Orderconfirm_agreement">
+
+    <LinearLayout
+        android:id="@+id/linerLayout_Agreement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="合約期間："
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.14" />
+
+            <ImageView
+                android:id="@+id/imgview_ocrAgreement_dateStart"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/icon_date"
+                app:layout_constraintEnd_toEndOf="@+id/tv_ocrAgreement_dateStart"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:text="~"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView9"
+                app:layout_constraintStart_toEndOf="@+id/tv_ocrAgreement_dateStart"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ImageView
+                android:id="@+id/imageview_ocrAgreement_dateEnd"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/icon_date"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/tv_ocrAgreement_dateEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="租金："
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="地址："
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+            <TextView
+                android:id="@+id/tv_ocrAgreement_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView15"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/textView15" />
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" / 月"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView14"
+                app:layout_constraintStart_toEndOf="@+id/tv_ocrAgreement_rent" />
+
+            <EditText
+                android:id="@+id/tv_ocrAgreement_rent"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="36dp"
+                android:ems="10"
+                android:inputType="number"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView14" />
+
+            <EditText
+                android:id="@+id/tv_ocrAgreement_dateStart"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:focusable="false"
+                android:inputType="textPersonName"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/textView9"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/tv_ocrAgreement_dateEnd"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:focusable="false"
+                android:inputType="textPersonName"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/textView13"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:text="相關法律條文："
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="第 424 條："
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="租賃物為房屋或其他供居住之處所者，如有瑕疵，危及承租人或其同居人之安全或健康時，承租人雖於訂約時已知其瑕疵，或已拋棄其終止契約之權利，仍得終止契約。"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="第 430 條："
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="租賃關係存續中，租賃物如有修繕之必要，應由出租人負擔者，承租人得定相當期限，催告出租人修繕，如出租人於其期限內不為修繕者，承租人得終止契約或自行修繕而請求出租人償還其費用或於租金中扣除之。"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="承租人應以善良管理人之注意，保管租賃物，租賃物有生產力者，並應保持其生產力。承租人違反前項義務，致租賃物毀損、滅失者，負損害賠償責任。但依約定之方法或依物之性質而定之方法為使用、收益，致有變更或毀者，不在此限。"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="第 431 條："
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="承租人就租賃物支出有益費用，因而增加該物之價值者，如出租人知其情事而不為反對之表示，於租賃關係終止時，應償還其費用。但以其現存之增價額為限。承租人就租賃物所增設之工作物，得取回之。但應回復租賃物之原狀。"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="第 432 條："
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="第 435 條："
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="租賃關係存續中，因不可歸責於承租人之事由，致租賃物之一部滅失者，承租人得按滅失之部分，請求減少租金。 前項情形，承租人就其存餘部分不能達租賃之目的者，得終止契約。"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="第 438 條："
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="承租人應依約定方法，為租賃物之使用、收益；無約定方法者，應以依租賃物之性質而定之方法為之。承租人違反前項之規定為租賃物之使用、收益，經出租人阻止而仍繼續為之者，出租人得終止契約。"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="點擊方框簽名："
+                android:textSize="16sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgview_ocrAgreement_HOCanvas"
+                    android:layout_width="170dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="32dp"
+                    android:src="@drawable/post_background"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/tv_ocrAgreement_HOCanvas_Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="房東簽名"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgview_ocrAgreement_HOCanvas"
+                    app:layout_constraintEnd_toEndOf="@+id/imgview_ocrAgreement_HOCanvas"
+                    app:layout_constraintStart_toStartOf="@+id/imgview_ocrAgreement_HOCanvas"
+                    app:layout_constraintTop_toTopOf="@+id/imgview_ocrAgreement_HOCanvas" />
+
+                <ImageView
+                    android:id="@+id/imgview_ocrAgreement_Canvas"
+                    android:layout_width="170dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="32dp"
+                    android:src="@drawable/post_background"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/imgview_ocrAgreement_HOCanvas"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/tv_ocrAgreement_Canvas_Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="房客簽名"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgview_ocrAgreement_Canvas"
+                    app:layout_constraintEnd_toEndOf="@+id/imgview_ocrAgreement_Canvas"
+                    app:layout_constraintStart_toStartOf="@+id/imgview_ocrAgreement_Canvas"
+                    app:layout_constraintTop_toTopOf="@+id/imgview_ocrAgreement_Canvas" />
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="送出後即同意，無法再進行更改！"
+                    android:textColor="#F44336"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imgview_ocrAgreement_HOCanvas"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <ImageButton
+                    android:id="@+id/bt_ocrAgreement_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="24dp"
+                    android:background="@drawable/bt_14050blank"
+                    android:src="?android:attr/selectableItemBackground"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView38"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/tv_ocrAgreement_cancelText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="取消"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bt_ocrAgreement_cancel"
+                    app:layout_constraintEnd_toEndOf="@+id/bt_ocrAgreement_cancel"
+                    app:layout_constraintStart_toStartOf="@+id/bt_ocrAgreement_cancel"
+                    app:layout_constraintTop_toTopOf="@+id/bt_ocrAgreement_cancel" />
+
+                <ImageButton
+                    android:id="@+id/bt_ocrAgreement_confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="24dp"
+                    android:background="@drawable/bt_14050blank"
+                    android:src="?android:attr/selectableItemBackground"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+                <TextView
+                    android:id="@+id/tv_ocrAgreement_confirmText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="確認"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bt_ocrAgreement_confirm"
+                    app:layout_constraintEnd_toEndOf="@+id/bt_ocrAgreement_confirm"
+                    app:layout_constraintStart_toStartOf="@+id/bt_ocrAgreement_confirm"
+                    app:layout_constraintTop_toTopOf="@+id/bt_ocrAgreement_confirm" />
+
+                <TextView
+                    android:id="@+id/textView69"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="7dp"
+                    android:text="房東簽名處："
+                    app:layout_constraintBottom_toTopOf="@+id/imgview_ocrAgreement_HOCanvas"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView70"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="7dp"
+                    android:text="房客簽名處："
+                    app:layout_constraintBottom_toTopOf="@+id/imgview_ocrAgreement_HOCanvas"
+                    app:layout_constraintStart_toStartOf="@+id/imgview_ocrAgreement_Canvas"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

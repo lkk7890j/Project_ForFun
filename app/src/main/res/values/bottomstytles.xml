@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="bottomstytles" parent="Theme.AppCompat.Light">
+        <!--選中顏色 -->
+        <item name="colorPrimary">@color/bottom_choose</item>
+        <!--未選中顏色 -->
+        <item name="android:textColorSecondary">@android:color/black</item>
+    </style>
+</resources>

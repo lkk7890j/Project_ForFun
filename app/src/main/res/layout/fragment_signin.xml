@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="#B6C2B7"
+    tools:context=".signin.SignInFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E8F5E9"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginRight="116dp"
+        android:src="@drawable/mark_removebg_preview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/bt_signin_bg"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvTest"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:background="#FFFFFF"
+        android:text="手機號碼："
+        android:textColor="#000000"
+        android:textSize="18dp"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/ed_phone"
+        app:layout_constraintTop_toTopOf="@+id/ed_phone"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvCode"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:background="#FFFFFF"
+        android:text="驗  證  碼："
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:visibility="invisible"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/ed_Verification_code"
+        app:layout_constraintTop_toTopOf="@+id/ed_Verification_code"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/ed_phone"
+        android:layout_width="230dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="54dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.795"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageButton
+        android:id="@+id/signin_assist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/icon_awesome_question"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+
+    <EditText
+        android:id="@+id/ed_Verification_code"
+        android:layout_width="230dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.79"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_phone" />
+
+
+    <ImageButton
+        android:id="@+id/signin_bt_Sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bt_signin_login"
+        android:src="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toTopOf="@+id/signin_bt_registered"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/signin_bt_registered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bt_registered"
+        android:src="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toTopOf="@+id/signin_tv_tourist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/signin_tv_tourist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="遊客登入"
+        android:textColor="#000000"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/signin_tv_Send_the_verification_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="發送驗證碼"
+        android:background="?android:attr/selectableItemBackground"
+        android:textColor="#181FD0"
+        app:layout_constraintBottom_toBottomOf="@+id/ed_phone"
+        app:layout_constraintEnd_toEndOf="@+id/ed_phone"
+        app:layout_constraintTop_toTopOf="@+id/ed_phone" />
+
+    <TextView
+        android:id="@+id/tvResendCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="重新發送驗證碼"
+        android:textColor="#181FD0"
+        android:visibility="invisible"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/ed_Verification_code"
+        app:layout_constraintEnd_toEndOf="@+id/ed_Verification_code"
+        app:layout_constraintTop_toTopOf="@+id/ed_Verification_code" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

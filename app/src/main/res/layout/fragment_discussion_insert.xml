@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".discussionboard.controller.DiscussionInsertFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/insert_board"
+                android:layout_width="71dp"
+                android:layout_height="33dp"
+                android:foregroundGravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="板塊選擇"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/insert_et_title"
+                app:layout_constraintEnd_toStartOf="@+id/insert_spinner"
+                app:layout_constraintHorizontal_bias="0.835"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/insert_bt_memberHead"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="MissingConstraints" />
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/insert_bt_memberHead"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/post_memberhead"
+                app:layout_constraintBottom_toTopOf="@+id/insert_et_title"
+                app:layout_constraintEnd_toStartOf="@+id/insert_board"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.224"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/insert_memberName_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="24dp"
+                android:hint="name"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toTopOf="@+id/insert_board"
+                app:layout_constraintEnd_toStartOf="@+id/insert_bt_insert"
+                app:layout_constraintHorizontal_bias="0.044"
+                app:layout_constraintStart_toEndOf="@+id/insert_bt_memberHead"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.217"
+                tools:ignore="MissingConstraints,UnknownId" />
+
+            <ImageView
+                android:id="@+id/insert_bt_image"
+                android:layout_width="305dp"
+                android:layout_height="167dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/uploadpicture"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/insert_et_context" />
+
+            <TextView
+                android:id="@+id/txtPublishTitleImage2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:background="#390B0101"
+                android:text="點擊此處更換圖片"
+                android:textColor="#FFFFFF"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/insert_bt_image"
+                app:layout_constraintStart_toStartOf="@+id/insert_bt_image" />
+
+
+            <EditText
+                android:id="@+id/insert_et_title"
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="112dp"
+                android:background="@drawable/chatmassage_other"
+                android:ems="10"
+                android:hint="請輸入標題......"
+                android:inputType="textLongMessage|textMultiLine|textPersonName"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.528"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/insert_et_context"
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/chatmassage_other"
+                android:ems="10"
+                android:hint="想說些什麼......"
+                android:inputType="textLongMessage|textMultiLine|textPersonName"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/insert_bt_image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.528"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/insert_et_title"
+                app:layout_constraintVertical_bias="0.31" />
+
+            <ImageButton
+                android:id="@+id/insert_bt_insert"
+                android:layout_width="64dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:background="@drawable/bt_14050blank"
+                android:src="?android:attr/selectableItemBackground"
+                app:layout_constraintBottom_toTopOf="@+id/insert_bt_image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView66"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="儲存"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="@+id/insert_bt_insert"
+                app:layout_constraintEnd_toEndOf="@+id/insert_bt_insert"
+                app:layout_constraintStart_toStartOf="@+id/insert_bt_insert"
+                app:layout_constraintTop_toTopOf="@+id/insert_bt_insert" />
+
+            <Spinner
+                android:id="@+id/insert_spinner"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:background="@drawable/spinner"
+                android:foreground="@drawable/shap"
+                app:layout_constraintBottom_toTopOf="@+id/insert_et_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.826"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/insert_bt_insert"
+                app:layout_constraintVertical_bias="0.236"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".orderconfirm.TappayActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView_TapPay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout_TapPay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="360dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/tView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="總金額："
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.18"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+                <TextView
+                    android:id="@+id/tv_ocrTapPay_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toEndOf="@+id/tView12"
+                    app:layout_constraintTop_toTopOf="@+id/tView12" />
+
+                <TextView
+                    android:id="@+id/tView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="付款方式："
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/tView"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_ocrTapPay_notes" />
+
+                <TextView
+                    android:id="@+id/tView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="其他："
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/tView16"
+                    app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+                <TextView
+                    android:id="@+id/tv_ocrTapPay_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:background="#FFEB3B"
+                    android:text="未付款，請選擇付款方式"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img_ocrTapPay_pic" />
+
+                <TextView
+                    android:id="@+id/tv_ocrTapPay_cardinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toEndOf="@+id/tView16"
+                    app:layout_constraintTop_toTopOf="@+id/tView16" />
+
+                <TextView
+                    android:id="@+id/tView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="說明："
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/tView12"
+                    app:layout_constraintTop_toBottomOf="@+id/tView12" />
+
+                <TextView
+                    android:id="@+id/tv_ocrTapPay_notes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toEndOf="@+id/tView"
+                    app:layout_constraintTop_toTopOf="@+id/tView" />
+
+                <ImageView
+                    android:id="@+id/img_ocrTapPay_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/uploadpicture"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.527"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tView5" />
+
+                <ImageButton
+                    android:id="@+id/bt_ocrTapPay_return"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:background="@drawable/bt_9044blank"
+                    android:src="?android:attr/selectableItemBackground"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_ocrTapPay_result" />
+
+                <ImageButton
+                    android:id="@+id/bt_ocrTapPay_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="32dp"
+                    android:background="@drawable/bt_9044blank"
+                    android:src="?android:attr/selectableItemBackground"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_ocrTapPay_result" />
+
+                <ImageButton
+                    android:id="@+id/bt_ocrTapPay_confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="32dp"
+                    android:background="@drawable/bt_9044blank"
+                    android:src="?android:attr/selectableItemBackground"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_ocrTapPay_result" />
+
+                <TextView
+                    android:id="@+id/tv_ocrTapPay_cancelText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="離開"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bt_ocrTapPay_cancel"
+                    app:layout_constraintEnd_toEndOf="@+id/bt_ocrTapPay_cancel"
+                    app:layout_constraintStart_toStartOf="@+id/bt_ocrTapPay_cancel"
+                    app:layout_constraintTop_toTopOf="@+id/bt_ocrTapPay_cancel" />
+
+                <TextView
+                    android:id="@+id/tv_ocrTapPay_returnText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="退回房東"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bt_ocrTapPay_return"
+                    app:layout_constraintEnd_toEndOf="@+id/bt_ocrTapPay_return"
+                    app:layout_constraintStart_toStartOf="@+id/bt_ocrTapPay_return"
+                    app:layout_constraintTop_toTopOf="@+id/bt_ocrTapPay_return" />
+
+                <TextView
+                    android:id="@+id/tv_ocrTapPay_confirmText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="確認付款"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bt_ocrTapPay_confirm"
+                    app:layout_constraintEnd_toEndOf="@+id/bt_ocrTapPay_confirm"
+                    app:layout_constraintStart_toStartOf="@+id/bt_ocrTapPay_confirm"
+                    app:layout_constraintTop_toTopOf="@+id/bt_ocrTapPay_confirm" />
+
+                <TextView
+                    android:id="@+id/textView44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="付款確認清單"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/bt_ocrTapPay_toBuy"
+                    android:layout_width="191dp"
+                    android:layout_height="57dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tView16"
+                    app:srcCompat="@drawable/icon_tappay" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="需登入Google帳號"
+                    android:textColor="#F44336"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/bt_ocrTapPay_toBuy" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".discussionboard.controller.DiscussionDetailFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="360dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+
+
+            <TextView
+                android:id="@+id/detail_memberName_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="name"
+                app:layout_constraintStart_toEndOf="@+id/detail_bt_memberHead"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/detail_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="161dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/post_houseimg_test"
+                app:layout_constraintBottom_toTopOf="@+id/detail_recyclerView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/detail_context_text" />
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/detail_bt_memberHead"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/post_memberhead"
+                app:layout_constraintBottom_toTopOf="@+id/detail_title_text"
+                app:layout_constraintEnd_toStartOf="@+id/detail_memberName_text"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/detail_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="time"
+                app:layout_constraintStart_toStartOf="@+id/detail_memberName_text"
+                app:layout_constraintTop_toBottomOf="@+id/detail_memberName_text" />
+
+            <TextView
+                android:id="@+id/detail_title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@null"
+                android:hint="title"
+                android:inputType="textMultiLine"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/detail_context_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/detail_context_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:background="@null"
+                android:hint="context"
+                android:inputType="textMultiLine"
+                app:layout_constraintBottom_toTopOf="@+id/detail_imageView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/detail_title_text"
+                app:layout_constraintVertical_bias="0.659" />
+
+            <ImageButton
+                android:id="@+id/detail_bt_more"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/shap"
+                android:src="@drawable/bt_more"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/detail_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="192dp"
+                app:layout_constraintBottom_toTopOf="@+id/detail_et_comment"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/detail_imageView">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <EditText
+                android:id="@+id/detail_et_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/et_comment"
+                android:ems="10"
+                android:hint="留言"
+                android:inputType="textPersonName"
+                android:maxLength="15"
+                android:singleLine="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.343"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/detail_recyclerView" />
+
+            <ImageButton
+                android:id="@+id/detail_bt_sent"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/shap"
+                android:src="@drawable/bt_send"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/detail_et_comment"
+                app:layout_constraintTop_toBottomOf="@+id/detail_recyclerView" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</ScrollView>

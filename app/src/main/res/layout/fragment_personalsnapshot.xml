@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".membercenter.personnalsanpshot.PersonalSnapshotFragment">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/ivPSHS"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        app:civ_shadow="true"
+        app:civ_shadow_radius="10dp"
+        tools:src="@tools:sample/avatars" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvRole1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#1CF8F8"
+            android:gravity="center"
+            android:text="房客"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvRole2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:background="#18DD43"
+            android:gravity="center"
+            android:text="房東"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvPSName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|left"
+            android:text="姓名:"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvPSGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="left"
+            android:text="性別:"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvPSAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="left"
+            android:text="戶籍地"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvPSCreatTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="left"
+            android:text="註冊時間:"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btPSMessage"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:src="?android:attr/selectableItemBackground"
+            android:background="@drawable/bt_privatemessage" />
+
+        <ImageButton
+            android:id="@+id/btPSReport"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="?android:attr/selectableItemBackground"
+            android:background="@drawable/bt_report" />
+
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tlPS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:tabIndicatorColor="#000000"
+        app:tabMaxWidth="0dp"
+        app:tabMode="fixed"
+        app:tabTextColor="@color/black" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vpPSStar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

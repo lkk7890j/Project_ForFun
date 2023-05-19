@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".membercenter.myevalution.MyLandlordFragment">
+
+    <TextView
+        android:id="@+id/tvMylandScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="房東平均分數:" />
+
+    <RatingBar
+        android:id="@+id/rbMyland"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="true"
+        android:progressTint="#FCFF8F"/>
+
+    <TextView
+        android:id="@+id/tvMylandNote"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="尚未有任何評價"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMyland"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

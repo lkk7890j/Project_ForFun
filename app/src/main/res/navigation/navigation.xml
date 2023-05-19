@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/signinInFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="idv.tfp10105.project_forfun.home.HomeFragment"
+        android:label="首頁"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_publishDetailFragment"
+            app:destination="@id/publishDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/memberCenterFragment"
+        android:name="idv.tfp10105.project_forfun.membercenter.MemberCenterFragment"
+        android:label="會員中心"
+        tools:layout="@layout/fragment_membercenter">
+        <action
+            android:id="@+id/action_memberCenterFragment_to_signinInFragment"
+            app:destination="@id/signinInFragment"
+            app:popUpTo="@id/signinInFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderconfirm_mainfragment"
+        android:name="idv.tfp10105.project_forfun.orderconfirm.Orderconfirm_mainfragment"
+        android:label="房客訂單管理"
+        tools:layout="@layout/fragment_orderconfirm_mainfragment">
+        <action
+            android:id="@+id/action_orderconfirm_mainfragment_to_orderconfirm_houseSnapshot"
+            app:destination="@id/orderconfirm_houseSnapshot" />
+        <action
+            android:id="@+id/action_orderconfirm_mainfragment_to_orderconfirm_mainfragment_ho"
+            app:destination="@id/orderconfirm_mainfragment_ho" />
+    </fragment>
+    <fragment
+        android:id="@+id/meberCenterPersonalInformationFragment"
+        android:name="idv.tfp10105.project_forfun.membercenter.MemberCenterPersonalInformationFragment"
+        android:label="個人資料"
+        tools:layout="@layout/fragment_membercenter_personalinformation" />
+    <fragment
+        android:id="@+id/discussionBoardFragment"
+        android:name="idv.tfp10105.project_forfun.discussionboard.DiscussionBoardFragment"
+        android:label="討論區"
+        tools:layout="@layout/fragment_discussion_board" >
+        <action
+            android:id="@+id/action_discussionBoardFragment_to_discussionInsertFragment"
+            app:destination="@id/discussionInsertFragment" />
+        <action
+            android:id="@+id/action_discussionBoardFragment_to_discussionDetailFragment"
+            app:destination="@id/discussionDetailFragment" />
+        <action
+            android:id="@+id/action_discussionBoardFragment_to_discussionUpdateFragment"
+            app:destination="@id/discussionUpdateFragment" />
+        <action
+            android:id="@+id/action_discussionBoardFragment_to_reportFragment"
+            app:destination="@id/reportFragment" />
+        <action
+            android:id="@+id/action_discussionBoardFragment_to_discussionBoard_RentSeeking_ListFragment"
+            app:destination="@id/discussionBoard_RentSeeking_ListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderconfirm_houseSnapshot"
+        android:name="idv.tfp10105.project_forfun.orderconfirm.Orderconfirm_houseSnapshot"
+        android:label="房屋快照"
+        tools:layout="@layout/fragment_orderconfirm_house_snapshot" >
+        <action
+            android:id="@+id/action_orderconfirm_houseSnapshot_to_orderconfirm_agreement"
+            app:destination="@id/orderconfirm_agreement" />
+        <action
+            android:id="@+id/action_orderconfirm_houseSnapshot_to_orderconfirm_score"
+            app:destination="@id/orderconfirm_score" />
+        <action
+            android:id="@+id/action_orderconfirm_houseSnapshot_to_orderconfirm_otherpay"
+            app:destination="@id/orderconfirm_otherpay" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderconfirm_mainfragment_ho"
+        android:name="idv.tfp10105.project_forfun.orderconfirm.Orderconfirm_mainfragment_ho"
+        android:label="房東訂單管理"
+        tools:layout="@layout/fragment_orderconfirm_mainho">
+        <action
+            android:id="@+id/action_orderconfirm_mainfragment_ho_to_orderconfirm_houseSnapshot"
+            app:destination="@id/orderconfirm_houseSnapshot" />
+        <action
+            android:id="@+id/action_orderconfirm_mainfragment_ho_to_orderconfirm_mainfragment"
+            app:destination="@id/orderconfirm_mainfragment" />
+        <action
+            android:id="@+id/action_orderconfirm_mainfragment_ho_to_ocrHO_Publishing"
+            app:destination="@id/ocrHO_Publishing" />
+    </fragment>
+    <fragment
+        android:id="@+id/ocrHO_Publishing"
+        android:name="idv.tfp10105.project_forfun.orderconfirm.ocf_houseOwner.OcrHO_Publishing"
+        android:label="刊登中物件"
+        tools:layout="@layout/fragment_ocr_h_o_publishing" />
+    <fragment
+        android:id="@+id/orderconfirm_agreement"
+        android:name="idv.tfp10105.project_forfun.orderconfirm.Orderconfirm_agreement"
+        android:label="合約"
+        tools:layout="@layout/fragment_orderconfirm_agreement" />
+    <fragment
+        android:id="@+id/orderconfirm_score"
+        android:name="idv.tfp10105.project_forfun.orderconfirm.Orderconfirm_score"
+        android:label="評價"
+        tools:layout="@layout/fragment_orderconfirm_score" />
+    <fragment
+        android:id="@+id/signinInFragment"
+        android:name="idv.tfp10105.project_forfun.signin.SignInFragment"
+        android:label="登入頁面"
+        tools:layout="@layout/fragment_signin" />
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="idv.tfp10105.project_forfun.signin.RegisterFragment"
+        android:label="註冊"
+        tools:layout="@layout/fragment_regist" />
+    <fragment
+        android:id="@+id/registIntroductionFragment"
+        android:name="idv.tfp10105.project_forfun.signin.RegistIntroductionFragment"
+        android:label="fragment_regist_introduction"
+        tools:layout="@layout/fragment_regist_introduction" />
+    <fragment
+        android:id="@+id/orderconfirm_otherpay"
+        android:name="idv.tfp10105.project_forfun.orderconfirm.Orderconfirm_otherpay"
+        android:label="其他款項"
+        tools:layout="@layout/fragment_orderconfirm_otherpay" />
+    <fragment
+        android:id="@+id/discussionInsertFragment"
+        android:name="idv.tfp10105.project_forfun.discussionboard.controller.DiscussionInsertFragment"
+        android:label="新增貼文"
+        tools:layout="@layout/fragment_discussion_insert" />
+    <fragment
+        android:id="@+id/discussionDetailFragment"
+        android:name="idv.tfp10105.project_forfun.discussionboard.controller.DiscussionDetailFragment"
+        android:label="討論區"
+        tools:layout="@layout/fragment_discussion_detail" />
+    <fragment
+        android:id="@+id/publishFragment"
+        android:name="idv.tfp10105.project_forfun.publish.PublishFragment"
+        android:label="刊登房屋"
+        tools:layout="@layout/fragment_publish" />
+    <fragment
+        android:id="@+id/personalSnapshotFragment"
+        android:name="idv.tfp10105.project_forfun.membercenter.personnalsanpshot.PersonalSnapshotFragment"
+        android:label="個人資訊快照"
+        tools:layout="@layout/fragment_personalsnapshot" />
+    <fragment
+        android:id="@+id/myEvaluationnFragment"
+        android:name="idv.tfp10105.project_forfun.membercenter.myevalution.MyEvaluationnFragment"
+        android:label="我的評分"
+        tools:layout="@layout/fragment_myevaluationn" />
+    <fragment
+        android:id="@+id/myFavoriteFragment"
+        android:name="idv.tfp10105.project_forfun.membercenter.myfavorite.MyFavoriteFragment"
+        android:label="收藏名單"
+        tools:layout="@layout/fragment_membercenter_myfavorite" />
+
+    <fragment
+        android:id="@+id/discussionUpdateFragment"
+        android:name="idv.tfp10105.project_forfun.discussionboard.controller.DiscussionUpdateFragment"
+        android:label="修改貼文" />
+    <fragment
+        android:id="@+id/publishDetailFragment"
+        android:name="idv.tfp10105.project_forfun.publish.PublishDetailFragment"
+        android:label="刊登詳細"
+        tools:layout="@layout/fragment_publish_detail" >
+        <action
+            android:id="@+id/action_publishDetailFragment_to_appointmentFragment"
+            app:destination="@id/appointmentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/appointmentFragment"
+        android:name="idv.tfp10105.project_forfun.appointment.AppointmentFragment"
+        android:label="預約看房"
+        tools:layout="@layout/fragment_appointment" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="idv.tfp10105.project_forfun.membercenter.Notification.NotificationFragment"
+        android:label="通知"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/signin_Guided_Tour_Fragment"
+        android:name="idv.tfp10105.project_forfun.signin.Guided_Tour.Signin_Guided_Tour_Fragment"
+        android:label="fragment_signin_guided_tour"
+        tools:layout="@layout/fragment_signin_guided_tour" />
+    <fragment
+        android:id="@+id/chatRoomFragment"
+        android:name="idv.tfp10105.project_forfun.chatroom.ChatRoomFragment"
+        android:label="私訊"
+        tools:layout="@layout/fragment_chat_room_message">
+        <action
+            android:id="@+id/action_chatRoomFragment_to_chatMessageFragment"
+            app:destination="@id/chatMessageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reportFragment"
+        android:name="idv.tfp10105.project_forfun.signin.Report_page.ReportFragment"
+        android:label="檢舉頁面"
+        tools:layout="@layout/fragment_report" />
+    <fragment
+        android:id="@+id/chatMessageFragment"
+        android:name="idv.tfp10105.project_forfun.chatroom.ChatMessageFragment"
+        android:label="私訊" />
+    <fragment
+        android:id="@+id/customerServiceFragment"
+        android:name="idv.tfp10105.project_forfun.signin.Customer_Service_Page.Customer_Service_Fragment"
+        android:label="客服頁面"
+        tools:layout="@layout/fragment_customer_service" />
+    <fragment
+        android:id="@+id/ocr_pay_otherpay"
+        android:name="idv.tfp10105.project_forfun.orderconfirm.ocf.Ocr_pay_otherpay"
+        android:label="其他款項"
+        tools:layout="@layout/fragment_ocr_pay_otherpay" />
+    <fragment
+        android:id="@+id/discussionBoard_RentSeeking_ListFragment"
+        android:name="idv.tfp10105.project_forfun.discussionboard.disboard.DiscussionBoard_RentSeeking_ListFragment"
+        android:label="需求單清單"
+        tools:layout="@layout/fragment_discussion_board__rent_seeking__list" />
+</navigation>
+
+

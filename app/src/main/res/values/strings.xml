@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Project_ForFun</string>
+    <!--底部導航欄-->
+    <string name="home">首頁</string>
+    <string name="discuss_area">討論區</string>
+    <string name="publish">刊登房屋</string>
+    <string name="message">私訊</string>
+    <string name="member_center">會員中心</string>
+    <string name="permission">請授予應用程式完整權限</string>
+    <!--會員中心-->
+    <string name="personal_information">個人資料</string>
+    <string name="favorite_list">收藏名單</string>
+    <string name="order_list">訂單管理</string>
+    <string name="publish_list">刊登單清單</string>
+    <string name="function_tour">功能導覽</string>
+    <string name="my_rating">我的評分</string>
+    <string name="log_out">登出</string>
+    <string name="log_out_dialog">您確定要登出?</string>
+    <string name="sure">確定</string>
+    <string name="cancel">取消</string>
+
+    <!-- 填上TapPay Portal上註冊的資料 -->
+    <!-- 開發者 / 應用程式 -->
+    <string name="TapPay_AppID">20648</string>
+    <string name="TapPay_AppKey">app_gvt0G15dGJHjcPKGRrtKdo1ZQhov5Ib2uwJW9wpO3Mo1nguuE01KAE1DvXXe</string>
+
+    <!-- 帳戶資訊 -->
+    <string name="TapPay_PartnerKey">partner_bxBsflQzsqHNLin5HTsx2ReoTyXcmeJ7cYh8vzfN23uQlphzxvw3SDvn</string>
+
+    <!-- 商家管理 / 商家設置-->
+    <!-- MerchantName->BankName-->
+    <string name="TapPay_MerchantName">TW_TAISHIN</string>
+    <string name="TapPay_MerchantID">ahic2569k3ig_TAISHIN</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--客服頁面-->
+    <string name="textedNameRequired">姓名不可空白</string>
+    <string name="textedMailRequired">信箱不可空白</string>
+    <string name="textedPhoneRequired">手機號碼不可空白</string>
+    <string name="textMessageRequired">留言不可空白</string>
+
+    <!--檢舉頁面-->
+    <string-array name="ReportFragment_Spinner">
+        <item>冒充他人</item>
+        <item>謾罵他人</item>
+        <item>不當留言</item>
+        <item>內容誇大</item>
+        <item>態度惡劣</item>
+
+
+    </string-array>
+    <string name="textedMGSRequired">內容不可空白</string>
+
+
+</resources>

@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "332785573063",
+    "project_id": "forfunfirebase",
+    "storage_bucket": "forfunfirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:332785573063:android:a29817ba29ba44a9f472e2",
+        "android_client_info": {
+          "package_name": "idv.tfp10105.project_forfun"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "332785573063-7pj362f9hl5udv7koo4gtaqug0e06phb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "idv.tfp10105.project_forfun",
+            "certificate_hash": "c414a96800437b1b8efb83e685d501bb72e6d851"
+          }
+        },
+        {
+          "client_id": "332785573063-ifgn7a59l9huttd94rmu6rki2st06jsm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "idv.tfp10105.project_forfun",
+            "certificate_hash": "194d7856c46f60fc0abcef11971a45673052cd1b"
+          }
+        },
+        {
+          "client_id": "332785573063-ma36majt0sp8aa0ej0u6ivj83umeifuq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "idv.tfp10105.project_forfun",
+            "certificate_hash": "13c285ee1ae015065986cffb667f57c15c6d0b9b"
+          }
+        },
+        {
+          "client_id": "332785573063-fedv2bg3bddcp9s7tugpnplbnfsan3g6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClA8zZ78uzg1fuMUVjL64fiGsPya8Airc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "332785573063-fedv2bg3bddcp9s7tugpnplbnfsan3g6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
